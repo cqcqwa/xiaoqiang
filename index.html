@@ -1,181 +1,568 @@
-<!DOCTYPE html>
-<html lang="zxx">
+﻿<!doctype html>
+<html>
 <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
-    <meta name="keywords" content="" />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+<meta charset="utf-8">
+<title>送给妹妹</title>
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- Custom Theme files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-    <!-- font-awesome icons -->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <!-- //Custom Theme files -->
-    <!-- online-fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-   <!-- //online-fonts -->
-   <link rel="stylesheet" href="./css/iconfont.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+body{
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+	position: relative;
+}
+#wrapper{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+#words{
+	pointer-events:none;
+	font-family: 'Calligraffitti', cursive;
+	position: absolute;
+	width: 100%;
+	padding: 200px 0 0 0;
+	font-size: 2.8em;
+	color: white;
+	text-align: center;
+}
+#words p{
+	display: none;
+}
+#words p#w1{
+	display: block;
+}
+#words p span{
+	display: block;
+	font-size: .4em;
+}
+#UI{
+	color: white;
+	width: 200px;
+	cursor: pointer;
+	position: relative;
+	display: none;
+}
+#behaviours{
+	margin-top: 10px;
+}
+#behaviours label span{
+	display: inline-block;
+	font-size: .7em;
+}
+#behaviours input{
+	width: 50px;
+	margin-bottom: 10px;
+	margin-top: -20px;
+}</style>
 </head>
 <body>
-    <div class="sidenav text-center">
-		<div class="side_top">
-			<img src="images/about.jpg" alt="news image" class="img-fluid navimg">
-			<h1 class="top_hd mt-2"><a href="index.html">陈强</a></h1>
-			<p class="top_hdp mt-2">热爱前端专业,喜欢专研前沿的技术。</p>
-        </div>
-		<!-- header -->
-        <header>
-			<div class="nav-top">
-				<nav class="mnu mx-auto">
-                    <label for="drop" class="toggle">Menu</label>
-                    <input type="checkbox" id="drop">
-						<ul class="menu">
-							<li class="active"><a href="#home" class="scroll">Home</a></li>
-							 <li class="mt-sm-3"><a href="#about" class="scroll">About</a></li>
-							<li class="mt-sm-3"><a href="#services" class="scroll">Project-experience</a></li>
-							<li class="mt-sm-3"><a href="#news" class="scroll">Recollect</a></li>
-                            <li class="mt-sm-3"><a href="#contact" class="scroll">Contact</a></li>
-                        </ul>
-				</nav>
-			</div>
-		</header>
-        <!-- //header -->
-    </div>
-    <div class="main">
-        <div class="banner-text-w3ls" id="home">
-			<div class="container">
-                <div class="mx-auto text-center">
-                    <h3>当你选择了一种语言，意味着你还选择了一组技术、一个社区!
-				</h3>
-					<p class="banp mx-auto mt-3">When you choose a language, it means you also choose a set of technologies, a community!    </p>
-					<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More</a>
-                </div>
-            </div>
-        </div>
-		<!-- about -->
-<section class="slide-wrapper" id="about">
-	<h2 class="w3_head mb-4">About Me </h2>
-	<h4 class="main_hd"> 青春是在你身上，你有人生最可宝贵的东西。 <br>Youth is in you. You have the most precious thing in life.</h4>
-	<p class="iner mt-md-5">
-		1、了解web标准，熟悉DIV+CSS页面布局，重构,掌握JavaScript，熟悉w3c标准，了解HTML语义化有一定的了解。
-		<br>
-		2、熟练掌握HTML5技术开发，熟悉响应式布局和弹性盒布局，百分比自适应布局，熟练掌握CSS3动画技术，且能熟练应用Animate.css动画库。
-		<br>
-		3、熟悉AJAX等网络通信和数据交互技术，了解JSONP等跨域问题
-		<br>
-		4、了解vue.js、Recat.js框架以及ES6特性、CSS预处理
-		<br>
-		5、与UI设计师积极合作，完成网页的前端页面实现；
-		<br>
-		6、与后端开发工程师积极合作，完成前端与后端的整合；
-		<br>
-		7、负责前端页面切图及专题模版制作，优化前端页面性能，能够解决浏览器兼容性问题；
-		<br>
-		9、运用PS 设计一些简单的网页、三折页、画册等。
-		</p>
-</section>
-<!-- //about -->
-<!-- services -->
-<section class="services" id="services">
-		<h3 class="w3_head mb-4 text-left"> Project experience</h3>
-		<p class="iner mt-md-5 text-left"> 
-				2017.9至2018.2在校实习项目技术支持
-				<br>
-				设计网页：应用PS软件独立设计相关网页。把相关网页运用代码实现于PC端，移动端。配合后期项目维护处理。
-				<br>
-				<br>
-				2019.3至2019.4
-				<br>			 
-				润泰文化传媒有限公司(pc端)(以上线)   技术支持、后期维护
-				<br>
-				后期网页维护：修改部分功能以及图片。实现需求：改写相关代码实现需求。 </p>
-	
-</section>
-		<!-- //services -->
-		<!-- news -->
-       <div class="news" id="news">
-		<h3 class="w3_head mb-4 text-left"> Recollect</h3>
-		<p class="iner mt-md-5 text-left"> 人世繁华，世道万千，忆往昔青葱岁月，感今时韶华流逝，喜从前初遇相识，哀当下蓦然离别。相见不如怀念，每次离别不仅带来悲伤也带来了下一次重逢的喜悦。我爱这个班级。 </p>
-				<div class="row news-grids-left mt-5">
-					<div class="col-lg-5 news_top">
-						<a href="./images/g1.jpg">>
-						<img src="images/g1.jpg" alt="news image" class="img-fluid">
-						</a>
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Summer·Graduation</h5>
-						<p class="mt-3">季闻花，一季听雨，一季迷惘，一季成长。别忘了那个夏天，曾有谁陪在身边。</p>
-						<br>
-						<p>Seasons of flowers, a season of rain, a season of confusion, a season of growth. Don't forget who was there that summer.</p>
-					</div>
-				</div>
-				<div class="row news-grids-middle">
-					<div class="col-lg-5 news_top">
-						<a href="./images/g2.jpg"><img src="images/g2.jpg" alt="news image" class="img-fluid"></a>
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Our Universitye</h5>
-						<p class="mt-3">飘落的梧桐叶惊动了小池塘，窗外的竹叶像浪，在风中微微荡漾。太阳穿过它们舞动的叶子，洒下斑驳的光。</p>
-						<br>
-						<p>The falling leaves of the sycamore startled the small pond. The bamboo leaves outside the window were like waves, gently rippling in the wind. The sun passes through their dancing leaves and sprays mottled light.</p>
-					</div>
-				</div>
-				<div class="row news-grids-right">
-					<div class="col-lg-5 news_top">
-						<a href="./images/g3.jpg">
-						<img src="images/g3.jpg" alt="news image" class="img-fluid">
-						</a>
-					</div>
-					<div class="col-lg-7 news_top1">
-						<h5>Our High School</h5>
-						<p class="mt-3">你要做一个不动声色的大人了。不准情绪化，不准偷偷想念，不准回头看。去过自己另外的生活。你要听话，不是所有的鱼都会生活在同一片海里。</p>
-						<br>
-						<p>You're going to be a quiet adult. Do not be emotional, do not secretly miss, do not look back. Live a different life for yourself. Be obedient, not all fish will live in the same ocean.</p>
-					</div>
-				</div>	
-				
+<div id=container>
+	<div id="wrapper"></div>
+	<div id="words">
+		<p id="w1">My Sensitive Heart</p>
+		<p id="w2">you are my guiding star</p>
+		<p id="w3">my heart</p>
+		<p id="w4">beats for you</p>
+		<p id="w5">you send me</p>
+		<p id="w6">into the sun</p>
+		<p id="w7">into chaos</p>
+		<p id="w8">i am all a'quiver!</p>
+        <p id="w9">Play with me!<span>move your mouse</span></p>
+        <p id="w10">love you forever 会好好的努力等妹妹的到来 永远爱你</p>
+        
+	</div>
+	<div id="UI">
+		<div><strong>SHAPES:</strong></div>
+			<ul>
+				<li id="heart">heart</li>
+				<li id="star">star</li>
+				<li id="circle">circle</li>
+				<li id="hallow">hallows</li>
+				<li id="kiss">kiss</li>
+			</ul>
+
+		<div id="behaviours">
+			<div><strong>BEHAVIOURS:</strong></div>
+			<label for="wander">wander <span>(how far do you stray?)</span></label><br />
+				<input id="wander" value="0.05" min="0.05" step="0.05" type="number"><br />
+			<label for="friction">friction <span>(f>1: faster, faster! f<1: slow....)</span></label><br />
+				<input id="friction" value=".9" min="0.5" step="0.05" type="number"><br />
+			<label for="mouseDistance">mouse distance <span>(how far do you feel it?)</span>:</label><br />
+				<input id="mouseDistance" value="100" min="0" step="5" type="number"><br />
+			<label for="mouseForce">mouse force <span>(how powerful is the effect!)</span></label><br />
+				<input id="mouseForce" value="0.05" min="0" step="0.05" type="number"><br />
+			<label for="springForce">particle spring force: <span>(springy or bouncy (strict or flexible))</span></label><br />
+				<input id="springForce" value="0.01" min="0" step="0.01" type="number"><br />
 		</div>
-<!-- //news -->
-<!-- contact -->
-	 <section class="wedo" id="contact">
-	<h3 class="w3_head mb-4 text-left"> Contact Me</h3>
-	<p class="iner mt-md-5 text-left"> 生活就是这样，因为方向不同，就只能一路走，一路告别。而我们所能做的，似乎就只有离别前珍惜，离别后怀念而已。 </p>
-		<div class="contact_grid_right mt-5 mx-auto text-left">
-				<form action="#" method="post">
-					<div class="row contact_top">
-						<div class="col-sm-6">
-							<input type="text" name="Name" placeholder="Name" required="">
-						</div>
-						<div class="col-sm-6">
-							<input type="email" name="Email" placeholder="Email" required="">
-						</div>
-					</div>	
-						<input type="text" name="Name" placeholder="Name" required="">
-						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-						<button type="submit" class="btn">Send Message</button>
-						<button type="reset" class="btn">Reset</button>
-						<div class="clearfix"></div>
-				</form>
-			</div>
-			<div class="cpy-right">
-				<p> <a href="##"><i class="iconfont icon-shouji"></i><sup style="font-size: 13px">17679254936</sup></a>
-					<a href="##"><i class="iconfont icon-qq"></i><sup style="font-size: 13px">1281684936</sup></a>
-					<a href="##"><i class="iconfont icon-ziyuan"></i><sup style="font-size: 13px">1281684936</sup></a>
-					<a href="https://mail.qq.com" target="new"><i class="iconfont icon-youxiang"></i><sup style="font-size: 13px">1281684936@qq.com</sup></a>
-					</p>
-			</div>
-	</section>
-	 <!-- //contact -->
-    </div>
-   
+	</div>
+</div>
+
+<script>
+var RUN_AS_ANIMATION=true,
+
+wrapper, canvas, context, width=600, height=600, Tau=Math.PI*2,
+systems=[],
+mouseX=0, mouseY=0, repelMouse = true,
+copyCount=1, sequenceCount=0, maxSequenceCount=22, sequenceDelay=2000,
+orbitting=false, orbitAngle, orbitDegrees=0, orbitSpeed=1, orbitalRadius=10, PI180=Math.PI/180, orbitVX, orbitVY,
+colourInterval,
+repaintColour="rgba(0,0,0, .05)",
+pathObjects=[];
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"heart", shape:"M 209.95 88.4 Q 210 86.85 210 86.5 210 86.05 210 85.6 210.65 27.5 177.7 7.25 143.7 -13.75 104.9 26 66.3 -13.75 32.3 7.25 -1.85 28.2 0.1 89.75 2.05 151.35 104.9 230 207.95 151.35 209.9 89.75 209.9 89.05 209.95 88.4 Z"} ),
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"star", shape:"M 0 115.05 L 81.35 86.25 83.55 0 136 68.5 218.7 43.95 169.8 115.05 218.7 186.1 136 161.55 83.55 230 81.35 143.8 0 115.05 Z"} ),
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"circle", shape:"M 220 110 Q 220 155.6 187.75 187.8 155.6 220 110 220 64.4 220 32.15 187.8 0 155.6 0 110 0 64.4 32.15 32.2 64.4 0 110 0 155.6 0 187.75 32.2 220 64.4 220 110 Z"} ),
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"smallHeart", shape:"M 174.15 97.5 Q 174.2 96.45 174.2 96.25 174.2 95.95 174.2 95.65 174.6 57.35 152.9 44.05 130.5 30.2 104.95 56.4 79.55 30.2 57.15 44.05 34.65 57.85 35.9 98.35 37.2 138.95 104.95 190.75 172.85 138.95 174.15 98.35 174.15 97.9 174.15 97.5 Z"} ),
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"hallow", shape:"M 220 188.7 L 219.5 187.75 Q 219.25 188.25 219.05 188.7 L 220 188.7 Z M 219.5 187.75 L 107.3 0.95 107.3 63.075 Q 107.85 63.05 108.4 63.05 116.65 63.05 124.15 64.95 140.05 68.9 152.5 81.3 170.75 99.6 170.75 125.4 170.75 139.9 165 152.05 M 219.05 188.7 L 106.95 188.7 0 188.7 107 0.45 107.3 0.95 M 106.95 188.7 L 106.95 187.75 106.9 187.75 Q 82 187.25 64.3 169.5 46 151.25 46 125.4 46 111.2 51.55 99.3 56.1 89.5 64.3 81.3 82 63.55 106.9 63.1 L 106.95 63.1 Q 107.125 63.087890625 107.3 63.075 L 107.3 187.75 Q 107.480859375 187.75 107.65 187.75 108 187.75 108.4 187.75 134.2 187.75 152.5 169.5 160.3 161.7 164.75 152.5 M 107.3 187.75 Q 107.1302734375 187.75 106.95 187.75"} ),
+pathObjects.push( {pLength:0, dom:null, pcStep:0, pt:null, id:"kiss", shape:"M 220 111.85 Q 219.6 112.1 219.2 112.35 187.4 131.35 162.3 153.55 141.15 172.15 110.5 173.35 79.15 172.4 57.8 153.55 32.6 131.3 0.6 112.2 0.3 112.05 0.05 111.85 M 219.2 112.35 Q 215.5 113.85 202.2 106.5 187.95 98.5 165 71 142.4 43.9 109.9 62.05 77.35 43.9 54.75 71 31.8 98.5 17.55 106.5 4.25 113.85 0.6 112.2 M 36.3 113.85 Q 65.95 119.15 84.55 120.75 109.25 111.8 130.8 120.05 151.35 118.9 179.7 113.85 M 84.55 120.75 Q 109.25 127.95 130.8 120.05"} ),
+
+
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          window.oRequestAnimationFrame      ||
+          window.msRequestAnimationFrame     ||
+          function(callback, element){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+var ParticleSystem = function(id){
+    Object.defineProperty(this, 'colour', { value:'#FF1515', writable:true });
+    Object.defineProperty(this, 'friction', { value:.9, writable:true });                // f < 1 == slows;  f > 1 == speeds up
+    Object.defineProperty(this, 'height', { value:100, writable:true });
+    Object.defineProperty(this, 'id', { value:id, writable:true} );
+    Object.defineProperty(this, 'maxSpeed', { value:10, writable:true });
+    Object.defineProperty(this, 'mouseRepelDist', { value:100, writable:true });         // Size of repel circle
+    Object.defineProperty(this, 'mouseForce', { value:.05, writable:true });             // dist particle moves when influenced by mouse. lower number: blends shape more: .05 - n
+    Object.defineProperty(this, 'numParticles', { value:50, writable:true }); 
+    Object.defineProperty(this, 'particles', { value:[], writable:true });
+    Object.defineProperty(this, 'repelMouse', { value:true, writable:true });
+    Object.defineProperty(this, 'springTo', { value:true, writable:true });
+    Object.defineProperty(this, 'springForce', { value:.01, writable:true });           // speed of return to spring point. tightness
+    Object.defineProperty(this, 'wandering', { value:true, writable:true });
+    Object.defineProperty(this, 'wander', { value:.05, writable:true });                  // bigger number - fuzzier .05 just perceptible
+    Object.defineProperty(this, 'wanderMod', { value:this.wander*.5, writable:true });
+    Object.defineProperty(this, 'width', { value:100, writable:true });
+    Object.defineProperty(this, 'x', { value:0, writable:true });
+    Object.defineProperty(this, 'y', { value:0, writable:true });
+}
+ParticleSystem.prototype.setWander = function(value){ this.wander = value; this.wanderMod = value*.5 }
+
+ParticleSystem.prototype.generate = function(){
+    for(var j=0; j<pathObjects.length; j+=1){
+        pathObjects[j].pcStep = pathObjects[j].pLength / this.numParticles;
+    }
+    var pShapeArrayX, pShapeArrayY;
+    for(var i=0; i<this.numParticles; i++){
+        // pass in pattern points
+        pShapeArrayX = [];
+        pShapeArrayY = [];
+        for(var p=0; p<pathObjects.length; p+=1){
+            pathObjects[p].pt = pathObjects[p].dom.getPointAtLength(i*pathObjects[p].pcStep);
+            pShapeArrayX.push(pathObjects[p].pt.x + ((this.width-220)/2));
+            pShapeArrayY.push(pathObjects[p].pt.y + ((this.height-230)/2));
+        }
+        var p = new Particle("p"+i, pShapeArrayX, pShapeArrayY, this);
+        this.particles.push(p);
+    }
+}
+
+ParticleSystem.prototype.update = function(){
+    var particle;
+    for(var i=0; i<this.numParticles; i++){
+        particle = this.particles[i];
+        particle.pUpdate();
+    }
+}
+
+ParticleSystem.prototype.pShapeMorph = function(value){
+    var particle;
+    for(var i=0; i<this.numParticles; i++){
+        particle = this.particles[i];
+        particle.pChangeSpringPoint(value);
+    }
+}
+
+var Particle = function(id, x, y, parentSystem){
+    Object.defineProperty(this, 'id', { value:id, writable:true });
+    Object.defineProperty(this, 'shapesX', { value:x, writable:true });
+    Object.defineProperty(this, 'shapesY', { value:y, writable:true });
+    Object.defineProperty(this, 'x', { value:this.shapesX[0], writable:true });
+    Object.defineProperty(this, 'y', { value:this.shapesY[0], writable:true });
+    Object.defineProperty(this, 'sx', { value:this.x, writable:true });
+    Object.defineProperty(this, 'sy', { value:this.y, writable:true });
+    Object.defineProperty(this, 'vx', { value:0, writable:true });
+    Object.defineProperty(this, 'vy', { value:0, writable:true });
+    Object.defineProperty(this, 'densityScore', { value:1, writable:true });
+    Object.defineProperty(this, 'parentSystem', { value:parentSystem, writable:true });
+    return this;
+}
+
+Particle.prototype.pChangeSpringPoint = function(value){
+    // change spring point - causes morph
+    if(value < 0) value = 0;
+    if(value >= this.x.length) value = this.x.length-1;
+    this.sx = this.shapesX[value];
+    this.sy = this.shapesY[value];
+}
+
+Particle.prototype.pUpdate = function(){
+    
+    // randomise movement slightly
+    if(this.parentSystem.wandering){
+        this.vx += Math.random() * this.parentSystem.wander - this.parentSystem.wanderMod;
+        this.vy += Math.random() * this.parentSystem.wander - this.parentSystem.wanderMod;
+    }
+
+    // apply friction
+    this.vx *= this.parentSystem.friction;
+    this.vy *= this.parentSystem.friction;
+
+    // constrain to speed bounds
+    var speed = Math.sqrt(this.vx*this.vx + this.vy*this.vy);
+    if (speed > this.parentSystem.maxSpeed) {
+        this.vx = this.parentSystem.maxSpeed * this.vx / speed;
+        this.vy = this.parentSystem.maxSpeed * this.vy / speed;
+    }
+
+    // stay attached to point
+    if(this.parentSystem.springTo){
+        this.vx += (this.sx - this.x) * this.parentSystem.springForce;
+        this.vy += (this.sy - this.y) * this.parentSystem.springForce;
+    }
+
+    // avoid the mouse
+    if(this.parentSystem.repelMouse){
+        var dx = mouseX - this.x;
+        var dy = mouseY - this.y;
+        var dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < this.parentSystem.mouseRepelDist) {
+            var tx = mouseX - this.parentSystem.mouseRepelDist * dx / dist;
+            var ty = mouseY - this.parentSystem.mouseRepelDist * dy / dist;
+            this.vx += (tx - this.x) * this.parentSystem.mouseForce;
+            this.vy += (ty - this.y) * this.parentSystem.mouseForce;
+        }
+    }
+
+    // update position
+    this.x += this.vx;
+    this.y += this.vy;
+}
+
+function get(id) {
+    return document.getElementById(id);
+}
+
+function createCanvas(id, w, h){
+    var tCanvas = document.createElement("canvas");
+    tCanvas.width = w;
+    tCanvas.height = h;
+    tCanvas.id = id;
+    return tCanvas;
+}
+
+function init(){
+    var tPath;
+    for(var i=0; i<pathObjects.length; i+=1){
+        tPath = document.createElementNS('http://www.w3.org/2000/svg','path');
+        tPath.setAttribute('d', pathObjects[i].shape);
+        pathObjects[i].dom = tPath;
+        pathObjects[i].pLength = tPath.getTotalLength();
+    }
+
+    wrapper = get("wrapper");
+    canvas =  createCanvas("canvas", width, height);
+    wrapper.appendChild(canvas);
+    context = canvas.getContext("2d");
+
+    /* Define new ParticleSystem and set values */
+    var system1 = new ParticleSystem('pSys1');
+    systems.push(system1);
+    system1.width = width;
+    system1.height = height;
+    system1.maxSpeed = 3;
+    system1.scalar = .3;
+    system1.numParticles = 100;
+    system1.x = 150;
+    system1.y = 150;
+    system1.setWander(1);
+    system1.generate();
+}
+
+function update(){
+    for(var i=0; i<systems.length; i++){
+        systems[i].update();
+    }
+    if(orbitting){
+        doOrbit();
+    }
+}
+
+function draw(){
+    var system;
+    for(var i=0; i<systems.length; i++){
+        system = systems[i];
+        context.fillStyle = system.colour;
+        var particle;
+        for(var j=0; j<system.numParticles; j+=1) {
+            particle = system.particles[j];
+            context.beginPath();
+            if(particle.densityScore > 0){
+                context.arc(particle.x, particle.y, particle.densityScore, 0, Tau, false);
+            }
+            context.fill();
+        }
+    }
+}
+
+function animate(){
+    context.fillStyle = repaintColour;
+    context.fillRect(0, 0, width, height);
+    update();
+    draw();
+    requestAnimFrame(animate);
+}
+
+function setUpEvents(){
+    function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+    canvas.addEventListener('mousemove', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        mouseX = mousePos.x;
+        mouseY = mousePos.y;
+    }, false);
+}
+
+function doOrbit(){
+    orbitAngle = orbitDegrees * PI180;
+    orbitDegrees += orbitSpeed;
+    orbitVX = orbitalRadius * Math.cos(orbitAngle);
+    orbitVY = orbitalRadius * Math.sin(orbitAngle);
+    mouseX = orbitVX + width*.5;
+    mouseY = orbitVY + height*.5;
+    // expand orbit
+    orbitSpeed*=1.003;
+    orbitalRadius*=1.003;
+}
+
+function randomColour(){
+    var r = Math.round(Math.random()*125)+130,
+    g = Math.round(Math.random()*155)+100,
+    b = Math.round(Math.random()*155)+100;
+    return 'rgb('+r+','+g+','+b+')';
+}
+
+function clickHandler(evt){
+    switch(evt.target.id){
+        case "heart":
+            systems[0].pShapeMorph(0);
+            break;
+        case "star":
+            systems[0].pShapeMorph(1);
+            break;
+        case "circle":
+            systems[0].pShapeMorph(2);
+            break;
+        case "hallow":
+            systems[0].pShapeMorph(4);
+            break;
+        case "kiss":
+            systems[0].pShapeMorph(5);
+            break;
+        case "wander":
+            systems[0].setWander(evt.target.value);
+            break;
+        case "friction":
+            systems[0].friction = evt.target.value;
+            break;
+        case "mouseDistance":
+            systems[0].mouseRepelDist = evt.target.value;
+            break;
+        case "mouseForce":
+            systems[0].mouseForce = evt.target.value;
+            break;
+        case "springForce":
+            systems[0].springForce = evt.target.value;
+            break;
+        default:
+            /* [[-_-]] */
+    }
+}
+
+function enableUI(){
+    get("heart").addEventListener("click", clickHandler, false);
+    get("star").addEventListener("click", clickHandler, false);
+    get("circle").addEventListener("click", clickHandler, false);
+    get("hallow").addEventListener("click", clickHandler, false);
+    get("kiss").addEventListener("click", clickHandler, false);
+
+    get('wander').addEventListener("change", clickHandler, false);
+    get('friction').addEventListener("change", clickHandler, false);
+    get('mouseDistance').addEventListener("change", clickHandler, false);
+    get('mouseForce').addEventListener("change", clickHandler, false);
+    get('springForce').addEventListener("change", clickHandler, false);
+    get('UI').style.display = "block";
+}
+
+function sequencer(){
+    sequenceCount++;
+    switch(sequenceCount){
+        case 2:
+            sequenceDelay=3000;
+            systems[0].colour = '#CACAF8';
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            systems[0].pShapeMorph(1);
+            break;
+        case 3:
+            sequenceDelay=3000;
+            systems[0].colour = '#FF1515';
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            systems[0].pShapeMorph(0);
+            break;
+        case 4:
+            sequenceDelay=500;
+            systems[0].colour = '#69359c';
+            systems[0].pShapeMorph(3);
+            break;
+        case 5:
+            sequenceDelay=500;
+            systems[0].colour = '#FF1515';
+            systems[0].pShapeMorph(0);
+            break;
+        case 6:
+            sequenceDelay=500;
+            systems[0].colour = '#69359c';
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            systems[0].pShapeMorph(3);
+            break;
+        case 7:
+            sequenceDelay=600;
+            systems[0].colour = '#FF1515';
+            systems[0].pShapeMorph(0);
+            break;
+        case 8:
+            sequenceDelay=500;
+            systems[0].colour = '#69359c';
+            systems[0].pShapeMorph(3);
+            break;
+        case 9:
+            sequenceDelay=1000;
+            systems[0].colour = '#FF1515';
+            systems[0].pShapeMorph(0);
+            break;
+        case 10:
+            sequenceDelay=3500;
+            systems[0].pShapeMorph(2);
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            break;
+        case 11:
+            sequenceDelay=1200;
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            mouseX = width * .5;
+            mouseY = height * .5;
+            systems[0].mouseForce = 7;
+            systems[0].mouseRepelDist = 175;
+            systems[0].springForce = .1;
+            systems[0].setWander(.05);
+            break;
+        case 12:
+            sequenceDelay=9000;
+            orbitting=true;
+            break;
+        case 13:
+            sequenceDelay=10000;
+            systems[0].colour = randomColour();
+            colourInterval = setInterval( function(){systems[0].colour = randomColour();}, 500 );
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            break;
+        case 14:
+            sequenceDelay=2000;
+            clearInterval(colourInterval);
+            systems[0].colour = '#FFFFFF';
+            break;
+        case 15:
+            sequenceDelay=300;
+            systems[0].colour = '#FF1515';
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            orbitting=false;
+            systems[0].pShapeMorph(0);
+            mouseX = width * .5;
+            mouseY = height * .5;
+            break;
+        case 16:
+            sequenceDelay=300;
+            systems[0].mouseForce = 6;
+            systems[0].mouseRepelDist = 150;
+            break;
+        case 17:
+            sequenceDelay=300;
+            systems[0].mouseForce = 4;
+            systems[0].mouseRepelDist = 100;
+            break;
+        case 18:
+            sequenceDelay=7000;
+            systems[0].mouseForce = 0.05;
+            systems[0].mouseRepelDist = 100;
+            systems[0].friction = 1.01;
+            mouseX = 0;
+            mouseY = 0;
+            break;
+        case 19:
+            sequenceDelay=300;
+            get("w"+(copyCount++)).style.display="none";
+            get("w"+copyCount).style.display="block";
+            systems[0].friction = .9;
+            systems[0].springForce = .01;
+            setUpEvents();
+            break;
+        case 20:
+            sequenceDelay=2000;
+            break;
+        case 21:
+            sequenceDelay=5000;
+            enableUI();
+            break;
+        case 22:
+            get("w"+copyCount).style.display="none";
+            break;
+        default:
+            /* [[-_-]] */
+    }
+    if(sequenceCount < maxSequenceCount){
+        setTimeout(function(){ sequencer(); }, sequenceDelay);
+    }
+}
+
+init();
+animate();
+if(!RUN_AS_ANIMATION){
+    setUpEvents();
+    enableUI();
+}
+else{
+    setTimeout(function(){ sequencer(); }, sequenceDelay);
+}
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
 </body>
 </html>
